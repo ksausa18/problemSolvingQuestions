@@ -1,0 +1,47 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Questions;
+
+/**
+ *
+ * @author ksausa18
+ */
+public class Factorial {
+    
+    
+    static int factorialMethod(int number){
+        
+        System.out.println(number);
+        if(number <= 1)
+            return 1;
+        
+        return factorialMethod(number-1) * number;
+        
+    }
+    
+    
+    
+    
+    
+    public static void main(String[] args){
+        
+        System.out.println(factorialMethod(5));
+    }
+    
+    
+    static int fact(int number){
+        int result=1;
+        
+        
+        
+        for(int i=1; i <= number ;i++){
+            result = result * i;
+            
+        }
+        
+        return result;
+        
+    }
+}
